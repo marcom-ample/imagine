@@ -1,0 +1,39 @@
+/* .post */
+.post p:first-child, .post h2:first-child{margin-top: 0}
+.post {padding: 55px 40px 60px 265px; }
+.post h2, .post h3, .post h4 {font-family: "FrutigerBold", sans-serif;}
+.post h2 {color: #000;font-size: 14px;margin: 25px 0 0}
+.post h3 {color: #000;margin: 10px 0;font-weight: 100} 
+.post p{margin: 13px 0; font-family: "FrutigerLight", sans-serif;}
+.post p strong{font-family: "FrutigerBold", sans-serif;}
+.post ul,.post ol {margin-left: 15px;}
+.post ul li, .post ol li {margin: 5px 0}
+.post ul li:last-child, .post ol li:last-child {margin-bottom: 13px}
+.post p a {border-bottom: 1px dashed #666; color: #000; text-decoration: none}
+.post p a:hover {border-bottom: 1px dashed #000}
+.post a.blocklink:hover{background: #ccc}
+
+.click-for-more,.click-for-more:visited{background:#222 url(overlay.png) repeat-x;display:inline-block;padding:3px 8px;color:#fff;text-decoration:none;-moz-border-radius:6px;-webkit-border-radius:6px;-moz-box-shadow:0 1px 3px rgba(0,0,0,0.6);-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.6);text-shadow:0 -1px 1px rgba(0,0,0,0.25);border-bottom:1px solid rgba(0,0,0,0.25);position:relative;cursor:pointer; font-size: 10px}
+.click-for-more:active{top:1px;}
+.click-for-more,.click-for-more:visited{text-shadow:0 -1px 1px rgba(0,0,0,0.25);background-color:#000;}
+.click-for-more:hover{background-color:#333;color: #fff}
+
+.post div.why-mac,.post div.brand {clear: both;margin-bottom: 30px;}
+.post div.why-mac img, .post div.brand img {float: left;}
+.post div.brand img{margin-top: 18px}
+.post div.why-mac p, .post div.why-mac h2, .post div.why-mac h3{margin-left: 75px}
+.post div.brand p, .post div.brand h2 {margin-left: 135px}
+
+.post div.sep {border-top: 1px solid #666;margin-top: 5px}
+
+.post div.floatleft {float: left;margin: 7px 7px 7px 0}
+.post.floatright {float: right;margin: 7px 0 7px 7px}
+
+.post.products .thumb{float: left;width: 205px;position: relative;margin-top: 10px;height: 236px}
+.post.products .rightpad{margin-right: 5px}
+.post.products .thumb p{position: absolute;top: 20px;left: 0; width: 100%;width: 175px;padding: 0 15px;line-height: 16px}
+.post.products .thumb p strong{display: block;padding-bottom: 5px}
+
+.post.other-brands {padding-left: 130px}
+/*------------------*/
+
