@@ -36,7 +36,7 @@ a:hover{color:$cBlack}
 header{@extend .colGrey}
 header nav ul li a{@extend .colGrey}
 header a:hover,header nav ul li.currentpage a,header nav ul li.current_page_item a,header nav ul li.current-page-ancestor a{@extend .colWhite}
-header nav{@extend .fsNormal;margin:0 0 0 215px;text-transform:uppercase;line-height: 1em;}
+header nav{@extend .fsNormal2;margin:0 0 0 215px;text-transform:uppercase;line-height: 1em;}
 header nav ul{margin-right:45px;border-left:1px #666 solid;padding-left:8px;@extend .floatLeft}
 header nav ul li{padding-bottom:10px;}
 header nav ul li:last-child{padding-bottom:0px;}
@@ -61,7 +61,8 @@ header nav ul li:last-child{padding-bottom:0px;}
 .ffNormal {font-family:'CartoGothicStdBook',verdana,sans-serif;font-weight: 100; }
 .ffBold {font-family:'CartoGothicStdBold',verdana,sans-serif;font-weight: 100; }
 .fsReset {font-size: 1em;}
-.fsNormal {font-size: 1.3em;line-height: 1.7em}
+.fsNormal {@extend .fsNormal2; line-height: 1.7em}
+.fsNormal2 {font-size: 1.3em;}
 .fsLarge {font-size: 1.8em}
 .fsSmall {font-size: .8em}
 
@@ -102,7 +103,7 @@ article div.floatleft{float:left;margin:7px 7px 7px 0}
 article.floatright{float:right;margin:7px 0 7px 7px}
 article.products .thumb{float:left;width:205px;position:relative;margin-top:10px;height:236px}
 article.products .rightpad{margin-right:5px}
-article.products .thumb p{position:absolute;top:20px;left:0;width:100%;width:175px;padding:0 15px;line-height:16px}
+article.products .thumb p{position:absolute;top:20px;left:0;width:100%;width:175px;padding:0 15px;line-height:16px;line-height: 1.3em}
 article.products .thumb p strong{display:block;padding-bottom:5px}
 article.other-brands{padding-left:130px}
 article .topics{background:#eee;padding:15px;overflow:auto;margin:10px -12px 30px}
@@ -153,6 +154,7 @@ article.post a {border-bottom: 1px dashed #666666}
 article.post a img {border: none}
 /* ------------ END HOME ------------ */
 /* FOOTER */
+footer {@extend .fsNormal}
 footer a{color:#000;}
 footer a:hover{color:#ccc;}
 footer ul{display:block;background-color:#999;padding:15px;text-align:right;text-transform:uppercase;}
@@ -196,3 +198,5 @@ h2#contacth2{color:#000;margin:0 0 10px 0;font-weight:normal;padding-bottom:10px
 
 @import 'joblisting';
 @import 'gform';
+@import 'magnific-popup';
+@import 'responsiveslides';

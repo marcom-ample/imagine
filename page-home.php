@@ -7,16 +7,16 @@ Template Name: home
 <?php get_header(); ?>
 	<article class="home">
 		<div id="highlight" >
-			<div><a target="_blank" href="http://imaginestore.org/new-iphone-pre-booking-enquiry/"><img src="<?php bloginfo('template_url');?>/images/highlight-iphone5s.jpg" alt="iPhone 5s PreBooking enquiry"/></a></div>
-			<div><a href="http://imaginestore.org/trade-in/"><img src="<?php bloginfo('template_url');?>/images/highlight-trade_in.jpg" alt="Mac Trade-in"/></a></div>
-			<div><a href="http://imaginestore.org/training/iphoto-imovie-garageband/"><img src="<?php bloginfo('template_url');?>/images/highlight-get_trained.jpg" alt="iLife trainig with Imagine"/></a></div>
+			<div><a target="_blank" href="<?php echo esc_url( home_url( '/' ) ); ?>new-iphone-pre-booking-enquiry/"><img src="<?php bloginfo('template_url');?>/images/highlight-iphone5s.jpg" alt="iPhone 5s PreBooking enquiry"/></a></div>
+			<div><a href="<?php echo esc_url( home_url( '/' ) ); ?>trade-in/"><img src="<?php bloginfo('template_url');?>/images/highlight-trade_in.jpg" alt="Mac Trade-in"/></a></div>
+			<div><a href="<?php echo esc_url( home_url( '/' ) ); ?>training/iphoto-imovie-garageband/"><img src="<?php bloginfo('template_url');?>/images/highlight-get_trained.jpg" alt="iLife trainig with Imagine"/></a></div>
 		</div>
 		<div class="clear"></div>
 		<div id="highlight2" >
 			<div class="follow"><p>Follow us on <br />
 			<a href="http://www.facebook.com/imaginebyample" target="_blank"><img src="<?php bloginfo('template_url');?>/images/icon-facebook.png" alt="icon-facebook" width="32" height="32"/></a>
 			<!-- <a href="http://twitter.com/imaginestore" target="_blank"><img src="<?php bloginfo('template_url');?>/images/icon-twitter.png" alt="icon-twitter" width="32" height="32"/></a> -->
-			<a href="http://imaginestore.org/blog/"><img src="<?php bloginfo('template_url');?>/images/icon-blog.png" alt="icon-blog" width="32" height="32"/></a>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>blog/"><img src="<?php bloginfo('template_url');?>/images/icon-blog.png" alt="icon-blog" width="32" height="32"/></a>
 			</p></div>
 			<div class="highlight-nav">
 				<nav>

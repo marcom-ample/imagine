@@ -47,13 +47,6 @@
 	function theme_setup() {
 	add_image_size( 'theme-custom-size', 240, 120, true );
 	}	
-	//jQuery Insert From Google
-	if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
-	function my_jquery_enqueue() {
-	wp_deregister_script('jquery');
-	wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js", false, 		null);
-	   wp_enqueue_script('jquery');
-	}
 	// Add body class to Visual Editor to match class used live
 	add_editor_style('css/custom-editor-style.css');
 	function mytheme_mce_settings( $initArray ){
@@ -186,6 +179,12 @@ add_filter( 'tiny_mce_before_init', 'mytheme_mce_settings' );
  
   }
 } // end dimox_breadcrumbs()
+
+  // Add "POPUP" class to menu items
+function add_menuclass($ulclass) {
+return preg_replace('/<a rel="fancybox"/', '<a rel="" class="popup"', $ulclass, 1);
+}
+add_filter('wp_nav_menu','add_menuclass');
 
 
 	// Clean up the <head>

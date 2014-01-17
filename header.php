@@ -12,16 +12,13 @@
 	<title>	<?php wp_title('');?></title>	
 	<link rel="shortcut icon" href="<?php bloginfo('template_url');?>/images/favicon.ico">		 
 	<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/main.css">
-	<script src="<?php bloginfo('template_url');?>/_/js/modernizr-1.7.min.js"></script>
-	<meta name="google-site-verification" content="OpBGFHZoAoAR7jNsf_KqR0-feqZ95TbeW4ourEzb2nA" />
 	<?php wp_head(); ?>	
 </head>
 
-<body <?php body_class(); ?>>
-	
+<body <?php body_class(); ?>>	
 	<div id="wrap">
 	<header>
-	<a href="http://imaginestore.org/"><img id="logo-imagine" src="<?php bloginfo('template_url');?>/images/logo-imagine.png" alt="logo-imagine" width="128" height="51"/></a>
+	<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img id="logo-imagine" src="<?php bloginfo('template_url');?>/images/logo-imagine.png" alt="logo-imagine" width="128" height="51"/></a>
 	<img id="logo-apr" src="<?php bloginfo('template_url');?>/images/logo-apr.png" alt="logo-apr"/>
 	<div class="clear"></div>
 	<nav>
@@ -41,7 +38,7 @@
 		<div class="caption-black" style="bottom:0"><p>404 error</p></div></div><?php } 
 	
 		elseif ( get_post_meta($post->ID, 'header_slider', true) )
-		{echo ( do_shortcode( get_post_meta( $post->ID , 'header_slider' , true ) ) ); }
+		{echo ( do_shortcode("[metaslider id=1631]")); }
 
 		else { ?>
 		<div id="slides" class="clear"><?php if(has_post_thumbnail()) {the_post_thumbnail();}

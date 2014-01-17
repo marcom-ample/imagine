@@ -10,16 +10,16 @@ Template Name:products > applications
 			
 		<article class="post two-column products" id="post-<?php the_ID(); ?>">
 		
-		<a href="http://imaginestore.org/products/applications/iwork"><div class="thumb rightpad">
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>products/applications/iwork"><div class="thumb rightpad">
 		<p><strong>iWork</strong>Transforms the way you present your work to the world.</p><img src="<?php bloginfo('template_url');?>/images/products/thumb-iwork.jpg" alt="iWork">
 		</div></a>
 		
-		<a href="http://imaginestore.org/products/applications/ilife"><div class="thumb">
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>products/applications/ilife"><div class="thumb">
 		<p><strong>iLife</strong>ReCreate Life. Photos, movies, music and much more..</p>
 		<img src="<?php bloginfo('template_url');?>/images/products/thumb-ilife.jpg" alt="iLife">
 		</div></a>
 <div class="clear"></div>
-		<a href="http://imaginestore.org/products/applications/microsoft-office"><div class="thumb rightpad">
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>products/applications/microsoft-office"><div class="thumb rightpad">
 		<p><strong>Office for Mac</strong>Create great-looking documents in a snap</p>
 		<img src="<?php bloginfo('template_url');?>/images/products/thumb-microsoft-office.jpg" alt="Office for Mac" >
 		</div></a>

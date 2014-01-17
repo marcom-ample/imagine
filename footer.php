@@ -6,6 +6,36 @@
 
 
 	</div>
+	<script src="<?php bloginfo('template_url');?>/js/jquery.magnific-popup.js"></script> 
+	<script type='text/javascript' src='<?php bloginfo('template_url');?>/js/responsiveslides.min.js'></script>
+
+		<script type="text/javascript">
+      $(document).ready(function() {
+
+        $('.popup').magnificPopup({
+          type: 'ajax',
+          alignTop: true,
+          overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+        });
+        $('.rslides, .menu-popup').each(function() 
+        	{ // the containers for all your galleries
+		    $(this).find('a').magnificPopup({
+		        type: 'ajax',
+		        gallery: {
+		          enabled:false
+		        	}
+		    	});
+		});       
+      });
+    </script>
+    <script type="text/javascript">
+		    	iframe: {
+		  markup: '<div class="mfp-iframe-scaler">'+
+		            '<div class="mfp-close"></div>'+
+		            '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+		          '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
+		}
+    </script>
 	<?php wp_footer(); ?>
 
 

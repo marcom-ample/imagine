@@ -10,11 +10,11 @@ Template Name:products > iPad
 			
 		<article class="post two-column products" id="post-<?php the_ID(); ?>">
 		
-		<a target="_blank" href="http://imaginestore.org/ipad-air/"><div class="thumb rightpad">
+		<a target="_blank" href="<?php echo esc_url( home_url( '/' ) ); ?>ipad-air/"><div class="thumb rightpad">
 		<p><strong>iPod Air</strong>The power of lightness.</p>
 		<img src="<?php bloginfo('template_url');?>/images/products/thumb-ipad-air.jpg" alt="iPod Shuffle" />
 		</div></a>		
-		<a target="_blank" href="http://imaginestore.org/ipad-mini-retina/"><div class="thumb">
+		<a target="_blank" href="<?php echo esc_url( home_url( '/' ) ); ?>ipad-mini-retina/"><div class="thumb">
 		<p><strong>iPad Mini with Retina display</strong>Small wonder.</p>
 		<img src="<?php bloginfo('template_url');?>/images/products/thumb-ipad-mini-retina.jpg" alt="iPod Nano" />
 		</div></a>

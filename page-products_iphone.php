@@ -10,11 +10,11 @@ Template Name:products > iPhone
 			
 		<article class="post two-column products" id="post-<?php the_ID(); ?>">
 		
-		<a target="_blank" href="http://imaginestore.org/iphone5s/"><div class="thumb rightpad">
+		<a target="_blank" href="<?php echo esc_url( home_url( '/' ) ); ?>iphone5s/"><div class="thumb rightpad">
 		<p><strong>iPhone 5s</strong>Forward thinking.</p>
 		<img src="<?php bloginfo('template_url');?>/images/products/thumb-iphone5s.jpg" alt="iPod Shuffle" />
 		</div></a>		
-		<a target="_blank" href="http://imaginestore.org/iphone5c/"><div class="thumb">
+		<a target="_blank" href="<?php echo esc_url( home_url( '/' ) ); ?>iphone5c/"><div class="thumb">
 		<p><strong>iPhone 5c</strong>For the colorful.</p>
 		<img src="<?php bloginfo('template_url');?>/images/products/thumb-iphone5c.jpg" alt="iPod Nano" />
 		</div></a>
