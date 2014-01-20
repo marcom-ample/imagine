@@ -6,6 +6,7 @@
 
 
 	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
 	<script src="<?php bloginfo('template_url');?>/js/jquery.magnific-popup.js"></script> 
 	<script type='text/javascript' src='<?php bloginfo('template_url');?>/js/responsiveslides.min.js'></script>
 
@@ -27,14 +28,6 @@
 		    	});
 		});       
       });
-    </script>
-    <script type="text/javascript">
-		    	iframe: {
-		  markup: '<div class="mfp-iframe-scaler">'+
-		            '<div class="mfp-close"></div>'+
-		            '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
-		          '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
-		}
     </script>
 	<?php wp_footer(); ?>
 

@@ -38,7 +38,7 @@
 		<div class="caption-black" style="bottom:0"><p>404 error</p></div></div><?php } 
 	
 		elseif ( get_post_meta($post->ID, 'header_slider', true) )
-		{echo ( do_shortcode("[metaslider id=1631]")); }
+		{echo ( do_shortcode( get_post_meta( $post->ID , 'header_slider' , true ) ) ); }
 
 		else { ?>
 		<div id="slides" class="clear"><?php if(has_post_thumbnail()) {the_post_thumbnail();}
