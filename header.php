@@ -12,6 +12,8 @@
 	<title>	<?php wp_title('');?></title>	
 	<link rel="shortcut icon" href="<?php bloginfo('template_url');?>/images/favicon.ico">		 
 	<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/main.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+	<script type='text/javascript' src='<?php bloginfo('template_url');?>/js/responsiveslides.min.js'></script>
 	<?php wp_head(); ?>	
 </head>
 

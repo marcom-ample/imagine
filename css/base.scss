@@ -41,12 +41,13 @@ header nav ul{margin-right:45px;border-left:1px #666 solid;padding-left:8px;@ext
 header nav ul li{padding-bottom:10px;}
 header nav ul li:last-child{padding-bottom:0px;}
 #slides,.metaslider{padding-top:35px;height:250px;overflow:hidden;position:relative;}
-#slides .caption,#slides .caption-black,.nivo-caption{z-index:500;position:absolute;left:0;padding:0 40px;width:660px;@extend .fsLarge;text-shadow:none;border-top-width:4px;border-top-style:solid;border-top-color:#414141;}
+#slides .caption,#slides .caption-black,.nivo-caption, .caption-wrap{z-index:500;position:absolute;left:0;padding:0 40px;width:660px;@extend .fsLarge;text-shadow:none;border-top-width:4px;border-top-style:solid;border-top-color:#414141;}
 .nivo-caption{background:#6e6e6e;background:rgba(110,110,110,.5);color:#fff;}
 #slides .caption{background:#d1d3d4;background:rgba(255,255,255,.5);color:#333333;}
 #slides .caption-black{background:#585858;background:rgba(0,0,0,.5);color:#bbbbbb;}
 .nivo_slider_container p,#slides p{@extend .ffNormal;padding:5px 0;}
 .nivo_slider_container .nivo-caption p a{text-decoration:none; @extend .colWhite}
+
 
 #breadcrumb{margin:5px 40px 0 40px;text-transform:uppercase;@extend .floatRight;@extend .fsSmall}
 #breadcrumb li{display:inline;border-right:1px solid #ccc;padding:0 5px}

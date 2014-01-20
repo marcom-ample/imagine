@@ -25,7 +25,6 @@ Template Name:products
 		<p><strong>iPad</strong>Your sleek performer.</p>
 		<img src="<?php bloginfo('template_url');?>/images/products/thumb-ipad.jpg" alt="iPad">
 		</div></a>
-<div class="clear"></div>
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>products/applications"><div class="thumb rightpad">
 		<p><strong>Applications</strong>The support system.</p>
 		<img src="<?php bloginfo('template_url');?>/images/products/thumb-applications.jpg" alt="Applications">

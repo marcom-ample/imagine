@@ -16,7 +16,7 @@ Template Name: home
 			<div class="follow"><p>Follow us on <br />
 			<a href="http://www.facebook.com/imaginebyample" target="_blank"><img src="<?php bloginfo('template_url');?>/images/icon-facebook.png" alt="icon-facebook" width="32" height="32"/></a>
 			<!-- <a href="http://twitter.com/imaginestore" target="_blank"><img src="<?php bloginfo('template_url');?>/images/icon-twitter.png" alt="icon-twitter" width="32" height="32"/></a> -->
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>blog/"><img src="<?php bloginfo('template_url');?>/images/icon-blog.png" alt="icon-blog" width="32" height="32"/></a>
+			<!--<a href="<?php echo esc_url( home_url( '/' ) ); ?>blog/"><img src="<?php bloginfo('template_url');?>/images/icon-blog.png" alt="icon-blog" width="32" height="32"/></a>-->
 			</p></div>
 			<div class="highlight-nav">
 				<nav>

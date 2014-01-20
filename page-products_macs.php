@@ -18,7 +18,7 @@ Template Name:products > macs
 		<p><strong>MacBook Air</strong>Rich in features.<br>Light in design.</p>
 		<img alt="MacBook Air" src="<?php bloginfo('template_url');?>/images/products/thumb-macbook-air.jpg">
 		</div></a>
-		<a target="_blank" href="<?php echo esc_url( home_url( '/' ) ); ?>imac"><div class="thumb rightpad">
+		<a class="popup" href="<?php echo esc_url( home_url( '/' ) ); ?>imac"><div class="thumb rightpad">
 		<p><strong>iMac</strong>The Machine that has it all.</p>
 		<img alt="iMac" src="<?php bloginfo('template_url');?>/images/products/thumb-imac.jpg">
 		</div></a>
